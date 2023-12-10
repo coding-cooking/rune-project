@@ -19,7 +19,8 @@ export default function Page() {
   }
 
   if (!info.connected) {
-    return <CircularProgress />;
+    console.log("connected failed");
+    return <CircularProgress value={80} />;
   }
   return <BasicInfo {...info} />;
 }
